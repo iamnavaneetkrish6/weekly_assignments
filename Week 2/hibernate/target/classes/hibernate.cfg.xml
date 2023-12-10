@@ -1,0 +1,30 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"https://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+
+
+
+
+
+		<!-- Database connection properties - Driver, URL, user, password -->
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/fowner</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">uday</property>
+
+
+
+
+		<property name="hbm2ddl.auto">update</property>
+		<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<property name="show_sql">true</property>
+
+
+
+
+		<!-- Mapping with model class containing annotations -->
+		<mapping class="com.spring.hibernateassignment.entity.FlightOwner" />
+	</session-factory>
+</hibernate-configuration>

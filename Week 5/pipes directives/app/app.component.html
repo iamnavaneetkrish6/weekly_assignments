@@ -1,0 +1,13 @@
+<h1>hi</h1>
+salary:{{salary| currency:'INR'}}
+Title : {{title|uppercase}}
+date:{{mydate|date:'fullDate'|uppercase}}
+slice:{{title|slice:1:3}}
+sqrt: {{16|sqrt}}
+<div *ngFor="let i of productList">
+    <h1>{{i.pid}}</h1>
+    <h1>{{i.pname}}</h1>
+    <h1>{{i.price}}</h1>
+</div>
+<button type="button"(click)="getAllProducts()"> click</button>
+<h1>{{productList|json}}</h1>

@@ -1,0 +1,22 @@
+.login-container {
+    background: url('../../../assets/login.jpg');
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-form {
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for the form */
+    color: black; /* Set text color to white */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+  }
+  
+  .text-danger {
+    color: red; /* Set the color of the error message to red */
+  }

@@ -1,0 +1,32 @@
+<div class="container mt-4">
+
+    <div class="alert alert-success" role="alert">
+        <p>Flight Owner works!</p>
+    </div>
+
+    <div>
+        <form #formData="ngForm" (ngSubmit)="addFlightOwner(formData)">
+            <div class="form-group class1">
+                <label for="flightOwnerName">Flight Owner Name</label>
+                <input type="text" name="flightOwnerName" ngModel class="form-control" required>
+            </div>
+
+            <div class="form-group class1">
+                <label for="flightOwnerPassword">Flight Owner Password</label>
+                <input type="password" name="flightOwnerPassword" ngModel class="form-control" required>
+            </div>
+
+            <div class="form-group class1">
+                <label for="flightOwnerContact">Flight Owner Contact</label>
+                <input type="tel" name="flightOwnerContact" ngModel class="form-control">
+            </div>
+
+            <div class="form-group class1">
+                <label for="flightOwnerEmail">Flight Owner Email</label>
+                <input type="email" name="flightOwnerEmail" ngModel class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Flight Owner</button>
+        </form>
+    </div>
+
+</div>

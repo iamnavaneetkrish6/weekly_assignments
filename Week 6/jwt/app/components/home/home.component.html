@@ -1,0 +1,25 @@
+<body>
+
+    <div class="container mt-100">
+        <h3 class="mb-100">Welcome To Smiply Fly </h3>
+
+        <form id="flightSearchForm" #formData="ngForm"  (ngSubmit)="searchFlight(formData)">
+            <div class="form-group">
+                <label for="source">Source:</label>
+                <input type="text" class="form-control" id="source" name="source" required>
+            </div>
+
+            <div class="form-group">
+                <label for="destination">Destination:</label>
+                <input type="text" class="form-control" id="destination" name="destination" required>
+            </div>
+
+            <div class="form-group">
+                <label for="travellDate">Travell Date:</label>
+                <input type="date" class="form-control" id="travellDate" name="travellDate" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Search Flights</button>
+        </form>
+</div>
+</body>

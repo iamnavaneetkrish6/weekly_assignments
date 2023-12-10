@@ -1,0 +1,45 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"https://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+
+
+
+
+
+		<!-- Database connection properties - Driver, URL, user, password -->
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/mapping_mm</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">admin</property>
+
+
+
+
+		<property name="hbm2ddl.auto">update</property>
+		<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<property name="show_sql">true</property>
+
+
+	<!-- Mapping with model class containing annotations for ONE TO ONE  -->
+	<!-- 	<mapping class="com.hexaware.mappings.entities.Student" />
+		<mapping class="com.hexaware.mappings.entities.Address" /> -->
+
+
+
+		<!-- Mapping with model class containing annotations for ONE TO MANY  -->
+	<!-- 	<mapping class="com.hexaware.mappings.entities.Employee" />
+		<mapping class="com.hexaware.mappings.entities.Department" /> -->
+		
+		
+		<!-- Mapping with model class containing annotations for MANY TO MANY  -->
+		<mapping class="com.hexaware.mappings.entities.Order" />
+		<mapping class="com.hexaware.mappings.entities.Product" />
+		
+		
+		
+		
+		
+	</session-factory>
+</hibernate-configuration>

@@ -1,0 +1,23 @@
+.container {
+    background-color: skyblue;/* Gradient from blue to orange */
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%; 
+    max-width: 700px;
+}
+
+.form-group label {
+    color: black;
+}
+
+.form-control {
+    color: #333;
+}
+
+button {
+    margin-top: 10px;
+}
+.class1{
+    padding:20px;
+}

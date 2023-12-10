@@ -1,0 +1,56 @@
+
+<body>
+
+    <div class="container login-container"><h2>User Registration</h2>
+      <form #formData="ngForm" (ngSubmit)="Registration(formData)">
+        <div class="form-group">
+          <label for="userName">User Name</label>
+          <input type="text" name="userName" ngModel class="form-control" required #name="ngModel" placeholder=""><br>
+          <span style="color:red"   *ngIf="name.touched && name.invalid" >Name is mandartory</span>
+        </div>
+        <div class="form-group">
+          <label>Gender</label><br>
+          <div class="form-check form-check-inline">
+            <input type="radio" name="gender" value="male" ngModel required class="form-check-input">Male
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" name="gender" value="female" ngModel  required class="form-check-input">Female
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" name="gender" value="other" ngModel required class="form-check-input">Other
+          </div>
+        </div>
+    
+        <div class="form-group">
+          <label for="contactNumber">Contact Number</label>
+          <input type="text" name="contactNumber" ngModel required #cno="ngModel" class="form-control" placeholder=""><br>
+          <span style="color:red"   *ngIf="cno.touched && cno.invalid" >Contact Number is mandartory</span>
+        </div>
+    
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input type="text" name="address" ngModel required #address="ngModel" class="form-control" placeholder=""><br>
+          <span style="color:red"   *ngIf="address.touched && address.invalid" >Address is mandartory</span>
+        </div>
+    
+        <div class="form-group">
+          <label for="dateOfBirth">Date of Birth</label>
+          <input type="date" name="dateOfBirth" ngModel required #dob="ngModel" class="form-control" placeholder=""><br>
+          <span style="color:red"   *ngIf="dob.touched && dob.invalid" >Date of Birth is mandartory</span>
+        </div>
+    
+        <div class="form-group">
+          <label for="userEmail">User Email</label>
+          <input type="email" name="userEmail" ngModel required #uEmail="ngModel" class="form-control" placeholder=""><br>
+          <span style="color:red"   *ngIf="uEmail.touched && uEmail.invalid " >User Email is mandartory</span>
+        </div>
+    
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" ngModel required #password="ngModel" class="form-control" placeholder=""><br>
+          <span style="color:red"   *ngIf="password.touched && password.invalid" >Password is mandartory</span>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    </body>

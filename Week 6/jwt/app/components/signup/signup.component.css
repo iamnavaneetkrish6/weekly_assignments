@@ -1,0 +1,32 @@
+body {
+    background: url('../../../assets/img1.jpg') center center/cover no-repeat fixed;
+    color: black;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+h1 {
+    color: #007bff; /* Set a primary color for the heading */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff; /* Set a primary color for the button */
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}

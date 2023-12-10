@@ -1,0 +1,18 @@
+<p>displayall works!</p>
+
+
+
+<button  type="button" class="btn btn-primary"  (click)="getAllEmployees()" >Display All Employeess</button>
+
+<div class="container">
+<table class="table table-primary col-sm-5">
+
+   <tr><th>SNO.</th><th>ADMIN ID</th><th>ADMIN NAME</th><th>ADMIN PASSWORD</th><th>ROLE</th> <th>DELETE</th></tr> 
+<tr *ngFor="let emp of adminList; index as i"><td>{{i+1}}</td> <td>{{emp.adminId}}</td><td>{{emp.adminName}}</td><td>{{emp.adminPassword}}</td> <td>{{emp.role}}</td>  
+
+      <td><button type="button" class="btn btn-danger"  (click)="deleteById(emp.adminId)" >Delete</button></td>
+
+</tr>
+
+</table>
+</div>

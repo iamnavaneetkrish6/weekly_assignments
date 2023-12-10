@@ -1,0 +1,18 @@
+<p>search works!</p>
+
+{{empSearchList[0]}}
+
+
+
+
+<div class="container">
+    <table class="table table-primary col-sm-5">
+    
+       <tr><th>SNO.</th><th>ADMIN ID</th><th>ADMIN NAME</th><th>ADMIN PASSWORD</th><th>ROLE</th> </tr> 
+    <tr *ngFor="let emp of empSearchList; index as i"><td>{{i+1}}</td> <td>{{emp.adminId}}</td><td>{{emp.adminName}}</td><td>{{emp.adminPassword}}</td> <td>{{emp.role}}</td>  
+    
+        
+    </tr>
+    
+    </table>
+    </div>

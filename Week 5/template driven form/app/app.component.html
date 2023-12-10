@@ -1,0 +1,39 @@
+<h1>hi</h1>
+<div class="container col-md-4">
+<form #inputform="ngForm" (ngSubmit)="readFormData(inputform)">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" name="email" required ngModel #emailid="ngModel" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+     <br> <span  *ngIf="emailid.touched && emailid.invalid">email is required</span>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" name="password" required  ngModel #pwd="ngModel">
+      <span  *ngIf="pwd.touched&& pwd.invalid">password is required</span>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="status" ngModel>
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="inputform.invalid">Submit</button>
+  </form>
+  </div>
+
+  <div class="container col-md-5">
+      <form #flighData="ngForm" (ngSubmit)="readFlightData(flighData)">
+        <label for="flightid">enter flightId</label>
+        <input type="text" name="flightId" required ngModel #id="ngModel">
+        <br><span *ngIf="id.touched && id.invalid">enter flightid</span>
+        <br>
+        <label for="flightname">enter flightname</label>
+        <input type="text" name="flightname" required ngModel #name="ngModel">
+        <br><span *ngIf="name.touched && name.invalid">enter flightname</span>
+        <br>
+        <label for="fare">enter flight fare</label>
+        <input type="text" name="fare" required ngModel #fare="ngModel">
+        <br><span *ngIf="fare.touched && fare.invalid">enter flight fare</span>
+        <br>
+        <button type="submit" [disabled]="flighData.invalid">add flight</button>
+      </form>
+  </div>

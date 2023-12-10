@@ -1,0 +1,26 @@
+<p>viewflightowner works!</p>
+<div class="container mt-5">
+    <h2>Flight Details</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Flight Owner Id</th>
+          <th scope="col">Flight Owner Name</th>
+          <th scope="col">Flight Owner Contact</th>
+          <th scope="col">Flight Owner Email</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let flightOwner of flightOwner">
+          <th scope="row">{{ flightOwner.flightOwnerId }}</th>
+          <td>{{ flightOwner.flightOwnerName }}</td>
+          <td>{{ flightOwner.flightOwnerContact }}</td>
+          <td>{{ flightOwner.flightOwnerEmail }}</td>
+          
+          <td><button type="button"> delete</button></td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>

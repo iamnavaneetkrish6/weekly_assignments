@@ -1,0 +1,18 @@
+<div class="container-fluid bg-dark">
+    <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-lg ">
+            <a href="#" class="navbar-brand">
+                <h1 class="text-primary mb-0 display-5">UV<span class="text-white">Trips</span><i class="fa fa-spider text-primary ms-2"></i></h1>
+            </a>
+            <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"   class="nav-item nav-link ">Home</a>
+                    <a routerLink="login"  routerLinkActive="active" class="nav-item nav-link">Login</a>
+                    <a routerLink="signup"  routerLinkActive="active"class="nav-item nav-link">Signup</a>
+                    <a routerLink="dashboard"  routerLinkActive="active" class="nav-item nav-link">Dashboard</a>
+                    <a  class="nav-item nav-link" (click)="logout()">Logout</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+  </div>

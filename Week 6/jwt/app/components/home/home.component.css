@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../assets/img.jpeg') center center/cover no-repeat fixed;
+    color: white;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container {
+    background: rgba(135, 206, 250, 0.7); /* Semi-transparent sky blue background for the form */
+    color: white; /* Set text color to white */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    background-size: cover; /* Ensure the background image covers the container */
+}
+
+h1 {
+    color: #007bff; /* Set a primary color for the heading */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff; /* Set a primary color for the button */
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
