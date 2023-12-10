@@ -1,0 +1,15 @@
+<button type="button" class="btn btn-primary" (click)="getAllPlayer()">Display All Players</button>
+
+<div class="container">
+  <table class="table table-primary col-sm-10">
+    <tr>
+      <th>SNO.</th>
+      <th>Player Name</th>
+    </tr>
+    <tr *ngFor="let player of playerList; index as i">
+      <td>{{i+1}}</td>
+      <td>{{player}}</td>
+    </tr>
+  </table>
+</div>
+
